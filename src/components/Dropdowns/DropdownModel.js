@@ -4,24 +4,28 @@ import React, { useState, useEffect } from 'react';
 import Api from '../../services/api'
 
 const DropdownModel = ({ callbackOption, makeId }) => {
-  const [models, setModels] = useState()
-  const updateModelsState = (models) => setModels(models)
+  const [models, setModels] = useState();
+  const [selectedModel, setSelectedModel] = useState();
+
+  const updateModelsState = (models) => setModels(models);
 
   useEffect(() => {
-      Api.GetModel(updateModelsState, makeId)
+    Api.GetModel(updateModelsState, makeId);
   }, [makeId]);
 
   const handleChange = event => {
-    callbackOption(event.target.value)
+    setSelectedModel(event.target.value);
+    callbackOption(event.target.value);
   };
 
   return (
     <div>
-      <label htmlFor="select-planets">Cars</label>
+      <label htmlFor="select-model">Cars</label>
       <select
         className="select"
-        id="select-planets"
+        id="select-model"
         onChange={handleChange}
+        value={selectedModel}
         disabled={!makeId}>
           <option></option>
         {models?.map((model, index) =>

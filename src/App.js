@@ -15,7 +15,7 @@ function App() {
 
   const callbackMake = (e) => {
     setMake(e);
-  };
+   };
   const callbackModel = (e) => {
     setModel(e);
   };
@@ -50,17 +50,19 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="sell">Vender meu Carro</div>
+        </div>
+
+        <div className="sell">
+          Vender meu Carro
         </div>
         <div>
-
         </div>
       </div>
-      {/* <DropdownMake callbackOption={callbackMake} />
+      <DropdownMake callbackOption={callbackMake} />
 
       <DropdownModel callbackOption={callbackModel} makeId={make} />
 
-      <DropdownVersion callbackOption={callbackVersion} modelId={model} /> */}
+      <DropdownVersion callbackOption={callbackVersion} modelId={model} />
     </div>
   );
 }
