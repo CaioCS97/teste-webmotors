@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import "../SearchFilters/SearchFilters.scss";
 import Api from '../../services/api'
 
 const DropdownVersion = ({ callbackOption, modelId }) => {
@@ -19,9 +20,8 @@ const DropdownVersion = ({ callbackOption, modelId }) => {
 
   return (
     <div>
-      <label htmlFor="select-version">Cars</label>
       <select
-        className="select"
+        className="col-12"
         id="select-version"
         onChange={handleChange}
         value={selectedVersion}

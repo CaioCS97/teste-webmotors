@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import "../SearchFilters/SearchFilters.scss";
 import Api from '../../services/api'
 
 const DropdownMake = ({ callbackOption }) => {
@@ -16,9 +17,8 @@ const DropdownMake = ({ callbackOption }) => {
 
   return (
     <div>
-      <label htmlFor="select-planets">Cars</label>
       <select
-        className="select"
+        className="col-12"
         id="select-planets"
         onChange={handleChange}>
           <option></option>
