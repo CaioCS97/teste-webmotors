@@ -11,6 +11,28 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.j-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
 .background {
   max-width: 933px;
   background-color: #F4F4F4;
@@ -75,27 +97,6 @@
   border-radius: 5px;
   margin-right: 10px;
 }
-.mb-15 {
-  margin-bottom: 15px;
-}
-.ml-15 {
-  margin-left: 15px;
-}
-.mr-15 {
-  margin-right: 15px;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.j-content-between {
-  display: flex;
-  justify-content: space-between;
-}
-.align-center {
-  display: flex;
-  align-items: center;
-}
 .form {
   background-color: white;
   padding: 25px 50px;
@@ -150,6 +151,7 @@ select {
 .advanced-search {
   color: #CA242E;
   font-weight: bold;
+  cursor: pointer;
   img {
     height: 10px;
     width: 10px;
@@ -159,6 +161,7 @@ select {
 .clean {
   color: #9B9999;
   font-weight: bold;
+  cursor: pointer;
 }
 .search-submit {
   background-color: #CA242E;
@@ -168,6 +171,7 @@ select {
   border: none;
   border-radius: 5px;
   height: 42px;
+  cursor: pointer;
 }
 .all-b-radius {
   border-radius: 3px;

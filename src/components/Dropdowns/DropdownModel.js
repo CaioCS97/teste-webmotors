@@ -10,7 +10,9 @@ const DropdownModel = ({ callbackOption, makeId }) => {
   const updateModelsState = (models) => setModels(models);
 
   useEffect(() => {
-    Api.GetModel(updateModelsState, makeId);
+    if (makeId) {
+      Api.GetModel(updateModelsState, makeId);
+    }
   }, [makeId]);
 
   const handleChange = event => {

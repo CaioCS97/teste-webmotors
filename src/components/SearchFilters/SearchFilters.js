@@ -120,11 +120,11 @@ function SearchFilters() {
               </div>
               <div className="col-6">
                 <div className="line mb-15">
-                  <div className="input col-6 mr-15">
+                  <div className="input all-b-radius col-6 mr-15">
                     <label htmlFor="marca">Marca:</label>
                     <DropdownMake callbackOption={callbackMake} />
                   </div>
-                  <div className="input col-6">
+                  <div className="input all-b-radius col-6">
                     <label htmlFor="Modelo">Modelo:</label>
                     <DropdownModel
                       callbackOption={callbackModel}
@@ -132,7 +132,7 @@ function SearchFilters() {
                     />
                   </div>
                 </div>
-                <div className="input">
+                <div className="input all-b-radius">
                   <label htmlFor="versao">Versão:</label>
                   <DropdownVersion
                     callbackOption={callbackVersion}

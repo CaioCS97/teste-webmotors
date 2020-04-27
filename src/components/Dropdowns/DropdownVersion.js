@@ -10,7 +10,9 @@ const DropdownVersion = ({ callbackOption, modelId }) => {
   const updateVersionState = (versions) => setVersions(versions);
 
   useEffect(() => {
-    Api.GetVersion(updateVersionState, modelId);
+    if (modelId) {
+      Api.GetVersion(updateVersionState, modelId);
+    }
   }, [modelId]);
 
   const handleChange = event => {
