@@ -16,16 +16,14 @@ const DropdownMake = ({ callbackOption }) => {
   };
 
   return (
-    <div>
       <select
         className="col-12"
-        id="select-planets"
+        id="select-make"
         onChange={handleChange}>
           <option></option>
         {makes?.map((make, index) =>
           <option value={make.ID} key={index}>{make.Name}</option>)}
       </select>
-    </div>
   )
 }
 export default DropdownMake;

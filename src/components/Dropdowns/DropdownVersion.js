@@ -21,7 +21,6 @@ const DropdownVersion = ({ callbackOption, modelId }) => {
   };
 
   return (
-    <div>
       <select
         className="col-12"
         id="select-version"
@@ -32,7 +31,6 @@ const DropdownVersion = ({ callbackOption, modelId }) => {
         {versions?.map((version, index) =>
           <option value={version.ID} key={index}>{version.Name}</option>)}
       </select>
-    </div>
   )
 }
 export default DropdownVersion;

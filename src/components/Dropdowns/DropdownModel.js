@@ -21,7 +21,6 @@ const DropdownModel = ({ callbackOption, makeId }) => {
   };
 
   return (
-    <div>
       <select
         className="col-12"
         id="select-model"
@@ -32,7 +31,6 @@ const DropdownModel = ({ callbackOption, makeId }) => {
         {models?.map((model, index) =>
           <option value={model.ID} key={index}>{model.Name}</option>)}
       </select>
-    </div>
   )
 }
 export default DropdownModel;
